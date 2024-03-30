@@ -54,7 +54,7 @@ terminal
 
 ```mv <имя файла> ~/<имя папки>``` (**move**, «переместить») — перемести файл или папку в другое место.
 
-[Шпаргалка. Базовые команды в консоли]()
+[Шпаргалка. Базовые команды в консоли](https://github.com/VelesLab/GitAssistant/blob/master/instructions/console-commands.md)
 
 ## Настройка Git
 
