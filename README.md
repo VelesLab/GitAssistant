@@ -302,11 +302,11 @@ Git хранит таблицу соответствий ```хеш → инфо�
 #### Типичный жизненный цикл файла в Git
 
 ```mermaid
-:root {--mermaind-theme:forest;}
 
 graph LR;
     A[untracked]  -- "git add" --> B[staged];
     B[staged]    -- "git commit"     --> C[tracked]  -- "Изменения" --> D[modified]  -- "git add" --> B[staged];
     B[staget] -- "Изменения" --> D[modified]
+
 ```
  
