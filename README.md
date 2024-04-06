@@ -302,10 +302,11 @@ Git хранит таблицу соответствий ```хеш → инфо�
 #### Типичный жизненный цикл файла в Git
 
 ```mermaid
-flowchart LR;
-A: note right of A: (неотслеживаемый) end note 
-    A[untracked]  -- "git add" --> B[staged] note right of B: (в списек на коммит) + tracked end note;
-    B[staged]    -- "git commit"     --> C[tracked] note right of C: (отслеживаемый) end note -- "Изменения" --> D[modified] note right of D: (изменённый) end note -- "git add" --> B[staged];
-    B[staget] -- "Изменения" --> D[modified] note tight of D: (изменённый) end note
+:root {--mermaind-theme:forest;}
+
+graph LR;
+    A[untracked]  -- "git add" --> B[staged];
+    B[staged]    -- "git commit"     --> C[tracked]  -- "Изменения" --> D[modified]  -- "git add" --> B[staged];
+    B[staget] -- "Изменения" --> D[modified]
 ```
  
