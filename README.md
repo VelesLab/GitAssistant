@@ -303,10 +303,7 @@ Git хранит таблицу соответствий ```хеш → инфо�
 
 ```mermaid
 graph LR;
-  untracked -- "git add" --> staged;
-  staged    -- "git commit"     --> tracked/comitted;
-
-%% стрелка без текста для примера: 
-  A --> B;
+  untracked (неотслеживаемый) -- "git add" --> staged (в списек на коммит) + tracked;
+  staged    -- "git commit"     --> tracked (отслеживаемый)/comitted -- "Изменения" --> modified (изменённый) -- "git add" --> staged;
 ```
  
